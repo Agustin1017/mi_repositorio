@@ -13,18 +13,19 @@ body{
 
 
 .grid-container{
-    display: grid;
-    width: 2000px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1500px;
     height: 1300px;
-    gap: 20px;
 }
 
 /*Cabecera de pagina-Logo-Titulo*/
 
 header{
     position: relative;
-    top: 10px;
-    left: 70px;
+    top: 5px;
+    left: 0pxpx;
     height: 70px;
     width: 100%;
     background: #000000;
@@ -114,10 +115,10 @@ a:hover{
 section{
     position: relative;
     top: 100px;
-    left: 90px;
-    width: auto;
+    left: 0px;
+    width: 90%;
     margin: 50px;
-    height: 450px;
+    height: 600px;
 }
 
 article{
@@ -152,17 +153,53 @@ tr td ol{
     margin-right: 10px;
 }
 
-/*FIN-SECTION*/
+/*FIN-SECTION-INDEX*/
+/*INICIO-DE-SECTION-AUTOS*/
+ 
+.grid-galeria-section{
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   height: 1000px;
+   width: 100%;
+}
+
+.galeria-de-autos{
+    display: grid;
+    padding-top: 15%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    
+}
+
+.galeria img{
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
+.imagen-pequeña{
+   width: 100%;
+   border: 1px solid #000000;
+   padding: 5px;
+}
+
+/*FIN-DE-SECION-AUTOS*/
+
 
 
 /*Footer-inicio*/
 .pie-de-pagina{
     position: relative;
     margin-right: 5px;
-    margin-left: 100px;
-    top: 0px;
+    margin-left: 5px;
+    top: 190px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100px 100px;
     background: #000;
     color: #fff;
+    height: 250px;
+    align-content: center;
 }
 
 .pie-de-pagina h3{
@@ -174,5 +211,13 @@ tr td ol{
     margin-top: 10px;
     text-align: center;
 }
+
+.footer-botom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /*Footer-Fin*/
