@@ -14,8 +14,8 @@ body {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 1500px;
-  height: 1300px;
+  width: 1900px;
+  height: 1700px;
   gap: 20px;
 }
 
@@ -23,14 +23,14 @@ body {
 header {
   position: relative;
   top: 10px;
-  left: 70px;
+  left: 0px;
   height: 70px;
   width: 100%;
   background: #000000;
  }
   header h1 {
     position: absolute;
-    top: 2px;
+    top: 0px;
     left: 130px;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -101,11 +101,12 @@ a:hover {
 /*Inicio-Section*/
 section {
   position: relative;
-  top: 100px;
-  left: 90px;
+  top: 300px;
+  left: 0px;
   width: 100%;
   margin: 50px;
-  height: 600px; }
+  height: 600px;
+ }
 
   section h2 {
     font-size: 33px;
@@ -122,7 +123,9 @@ article {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 17px; }
+  font-size: 17px;
+}
+
   #Tabla ol li {
     margin-left: 30px;
     margin-right: 10px; 
@@ -172,7 +175,7 @@ tr td ol {
   position: relative;
   margin-right: 5px;
   margin-left: 5px;
-  top: 190px;
+  top: 200px;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 100px 100px;
@@ -181,13 +184,14 @@ tr td ol {
   height: 250px;
   align-content: center; 
 }
+
   .pie-de-pagina h3 {
     margin-bottom: 50px;
     text-align: center; 
   }
 
   .pie-de-pagina p {
-    margin-top: 10px;
+    margin-top: 90px;
     text-align: center; 
   }
 
@@ -198,3 +202,30 @@ tr td ol {
 }
 
 /*Footer-Fin*/
+
+
+/*media-inicio*/
+
+@media screen and (max-width: 1200px){
+  .grid-container{
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 480px){
+   header{
+    display: flex;
+    flex-direction: column;
+   }
+}
+
+@media screen and (min-width: 600px){
+    .grid-container{
+      display: grid;
+      grid-template-columns: 50%;
+      justify-content: center;
+    }
+}
+
+
+/*media-fin*/
