@@ -1,3 +1,18 @@
+$titulos:( // cambio de texto de las paguinas
+    h1: #000000,
+    h2: #ffffff,
+    h3: #808080,
+);
+
+
+$estilos:(// cambio de tamañan y padding de la tabla
+  color: #3673d9,
+  centro: center,
+  tFuente: 35px,
+  1rem: 1rem,
+  izquierda: left,
+);
+
 * {
     padding: 0;
     margin: 0;
@@ -37,7 +52,7 @@ header {
         left: 130px;
         font-size: 25px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #ffffff;
+        color:map-get($titulos, h1 );
     }
     img{
         position: absolute;
@@ -133,23 +148,23 @@ article {
     padding-bottom: auto;
 }
 
-#Tabla {
+#Tabla {//cambie la fuente del texto a 35px
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 17px;
+    font-size:map-get($estilos, tFuente );
     ol li{
         margin-left: 30px;
         margin-right: 10px;
     }
 }
 
-tr td {
-    text-align: center;
+tr td {//centre el texto
+    text-align:map-get($estilos, center );
 }
 
-tr td ol {
-    text-align: left;
+tr td ol {// cambier el texto a center
+    text-align:map-get($estilos , izquierda );
 }
 
 
@@ -200,13 +215,13 @@ tr td ol {
         color: #fff;
         height: 250px;
         align-content: center;
-    h3{
+    h3{//Puse el texto en center
         margin-bottom: 50px;
-        text-align: center;
+        text-align:map-get($estilos , center );
     }
-    p{
+    p{// cambie el p y le agrege estilos, center
         margin-top: 10px;
-        text-align: center;
+        text-align:map-get($estilos, center );
     }
 }
 
