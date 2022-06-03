@@ -1,18 +1,3 @@
-$titulos:( // cambio de texto de las paguinas
-    h1: #000000,
-    h2: #ffffff,
-    h3: #808080,
-);
-
-
-$estilos:(// cambio de tamañan y padding de la tabla
-  color: #3673d9,
-  centro: center,
-  tFuente: 35px,
-  1rem: 1rem,
-  izquierda: left,
-);
-
 * {
     padding: 0;
     margin: 0;
@@ -232,4 +217,19 @@ tr td ol {// cambier el texto a center
 }
 
 
-/*Footer-Fin*/
+$titulos: (
+    // cambio de texto de las paguinas
+    h1: #000000,
+    h2: #ffffff,
+    h3: #808080,
+);
+
+
+$estilos: (
+    // cambio de tamañan y padding de la tabla
+    color: #3673d9,
+    centro: center,
+    tFuente: 35px,
+    1rem: 1rem,
+    izquierda: left,
+);
